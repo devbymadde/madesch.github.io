@@ -1,0 +1,33 @@
+code {
+  padding: 2px;
+  background: $code-background;
+  border: 1px solid $code-border;
+  border-radius: 3px;
+  font-family: $font-code;
+  font-size: 1.35rem;
+}
+
+pre {
+  margin-bottom: 1.3rem;
+  border-radius: 3px;
+  font-family: $font-code;
+  font-size: 1.3rem;
+  font-weight: normal;
+  line-height: 1.8rem;
+
+  code {
+    padding: 0;
+    background: none;
+    border: none;
+  }
+}
+
+.highlight pre,
+pre.highlight {
+  padding: 10px;
+}
+
+.highlight pre code,
+pre.highlight code {
+  white-space: pre-wrap;
+}

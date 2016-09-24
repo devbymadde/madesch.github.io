@@ -1,0 +1,27 @@
+input {
+  &[type="date"],
+  &[type="datetime"],
+  &[type="datetime-local"],
+  &[type="email"],
+  &[type="month"],
+  &[type="number"],
+  &[type="password"],
+  &[type="search"],
+  &[type="tel"],
+  &[type="text"],
+  &[type="time"],
+  &[type="url"],
+  &[type="week"] {
+    width: 240px;
+    padding: 1em;
+    background: #FFF;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: $font-body-color;
+  }
+
+  &:focus {
+    border-color: #5ba4e5;
+  }
+}

@@ -1,0 +1,30 @@
+.btn {
+  a {
+    padding: 10px 20px;
+    border: 1px solid $button-link-color;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-shadow: none;
+    color: $button-link-color;
+    -webkit-font-smoothing: antialiased;
+    @include mobile {
+      display: block;
+      margin-bottom: 0.4em;
+    }
+  }
+}
+
+.btn:hover a:hover {
+  color: $button-hover-color;
+  border-color: $button-hover-color;
+}
+
+.close,
+.menu {
+  position: relative;
+  top: 3px;
+  left: 10px;
+  font-size: 36px;
+  color: #FFF;
+}

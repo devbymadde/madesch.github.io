@@ -1,0 +1,16 @@
+@import 'https://fonts.googleapis.com/css?family=Lora:400,400i,700|Montserrat';
+$font-main: 'Lora', serif;
+$font-header: 'Montserrat', sans-serif;
+$font-body-color: #666;
+$font-header-color: #FDA27B;
+$font-code: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+$button-link-color: #FDA27B;
+$button-hover-color: $font-body-color;
+$link-color: #FDA27B;
+$link-hover-color: $font-body-color;
+$code-background: #eae4e0;
+$code-border: darken($code-background, 10%);
+$mobile-menu-background: #414241;
+$accent-color: #FDA27B;
+$accent-color-complementary: #FDA27B;
+$overlay-color: rgba(65,66,65,0.6);

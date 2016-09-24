@@ -1,0 +1,46 @@
+.container {
+  position: relative;
+  z-index: 500;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  z-index: 800;
+  width: 60%;
+  max-width: 800px;
+  margin-left: 40%;
+  @include desktop {
+    margin-left: 530px;
+  }
+  @include tablet {
+    width: 80%;
+    max-width: none;
+    margin: 0 auto;
+  }
+}
+
+.post-wrapper {
+  margin: 0 10%;
+  padding: 50px 0;
+  @include tablet {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.avatar,
+.logo {
+  border-radius: 50%;
+  border: 3px solid #FFF;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.user-image {
+  margin-bottom: 1.2em;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+}

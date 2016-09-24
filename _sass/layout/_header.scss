@@ -1,0 +1,153 @@
+.header-cover {
+  display: block;
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  max-width: none;
+  font-family: $font-header;
+  height: 100%;
+  background: url("../images/background-cover.jpg") top left no-repeat $font-body-color;
+  background-size: cover;
+
+  a {
+    color: #fff;
+
+    &:hover{
+      color:$link-color;
+    }
+  }
+  @include tablet {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+
+    &.collapsed {
+      display: block;
+      position: relative;
+      height: auto;
+      padding: 0;
+      background-position: center center;
+
+      .inner {
+        display: block;
+        padding: 70px 0 30px;
+      }
+
+      .description {
+        display: none;
+      }
+
+      .divider {
+        display: none;
+        margin: 1em auto;
+      }
+    }
+  }
+}
+
+.collapsed {
+  width: 40%;
+  max-width: 530px;
+  @include tablet {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $overlay-color;
+  background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
+  background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
+}
+
+.description {
+  margin: 0 30px;
+  @include desktop {
+    margin: 0 10px;
+    font-size: 0.9em;
+  }
+  @include tablet {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.divider {
+  width: 50%;
+  margin: 20px auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.divider-smaller {
+  width: 15%;
+  @include tablet {
+    display: none;
+  }
+}
+
+.header-main {
+  display: table;
+  width: 100%;
+  height: 100%;
+  @include tablet {
+    display: table;
+    position: relative;
+  }
+}
+
+.no-js .header-main {
+  width: 40%;
+  max-width: 530px;
+}
+
+.inner {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 800;
+  padding: 0 60px;
+  @include tablet {
+    display: table-cell;
+    padding: 60px 10%;
+  }
+  @include mobile {
+    padding: 0 5%;
+  }
+}
+
+.header-content {
+  max-width: 620px;
+  margin: 0 auto;
+
+  h1 {
+    margin: 0 0 5px;
+    font-size: 2.5em;
+    color: #FFF;
+    @include desktop {
+      font-size: 2em;
+    }
+    @include mobile {
+      margin-bottom: 0.1em;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.header-inverted {
+  font-weight: 100;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+
+  a {
+    color: #FFF;
+  }
+}

@@ -1,0 +1,21 @@
+ol,
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+hr {
+  border: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+.dot-divider{
+  position: relative;
+  top: 2px;
+}

@@ -1,0 +1,39 @@
+title: Madde's blog
+description: 'Turning coffee into code'
+url: 'http://madesch.github.io'
+baseurl: '/'
+google_analytics: 'UA-86115972-1'
+disqus_shortname: madesch
+
+author:
+  name: 'Madeleine Schönemann'
+  email: madeleine.schonemann@gmail.com
+  twitter_username: madesch
+  facebook_username: madeleine.schonemann
+  github_username:  madesch
+  linkedin_username:  madeleineschonemann
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+sass:
+    sass_dir: _sass
+    style: compressed
