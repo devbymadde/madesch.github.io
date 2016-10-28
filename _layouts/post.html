@@ -5,15 +5,20 @@ layout: default
   <header>
     <h1 class="post-title">{{ page.title }}</h1>
     <div class="post-meta">
-      <time datetime="{{ page.date | date: " %-d %b %Y " }}" class="date date">{{ page.date | date: "%-d %b %Y" }}</time> <span class="dot-divider">&#8226;</span> <span class="tags">on {% for tag in page.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+      <time datetime="{{ page.date | date: " %-d %b %Y " }}" class="date date">{{ page.date | date: "%-d %b %Y" }}</time> <span class="dot-divider">&#8226;</span> <span class="tags">in {% for category in page.categories %}<a href="{{ site.baseurl }}categories/{{ category }}">{{ category }}</a> {% endfor %}</span>
     </div>
   </header>
 
   <section class="post">
     {{ content }}
   </section>
+  <div class="post-meta">
+    <span class="tags">Tags: {% for tag in page.tags %}<a href="{{ site.baseurl }}tags/{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+  </div>
   {% if page.comments != false and site.disqus_shortname %}
   <section id="disqus_thread"></section>
 {% endif %}
 </article>
+
+
 {% if page.comments != false %}{% include disqus.html %}{% endif %}

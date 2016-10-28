@@ -2,15 +2,8 @@
 layout: default
 ---
 <div class="archive">
-<h2>Tags:</h2>
+<h2>Categories:</h2>
   {% for tagitem in site.tags %}
-  <h3> {{ tagitem[0] }} <i class="fa fa-caret-right" aria-hidden="true"></i></h3>
-  <ul>
-    {% for post in site.posts %} {% if post.tags contains tagitem[0] %}
-    <li>
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </li>
-    {% endif %} {% endfor %}
-  </ul>
+  <a href="{{ site.baseurl }}tags/{{tagitem[0]}}"><h3> {{ tagitem[0] }} </h3></a>
   {% endfor %}
 </div>

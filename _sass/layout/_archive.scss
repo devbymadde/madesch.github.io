@@ -5,3 +5,14 @@
     text-transform: uppercase;
   }
 }
+
+.archive-title {
+  color: $font-body-color;
+  font-size:1.5rem;
+}
+
+.archive-divider {
+  width: 30%;
+  margin: 0 0 30px 0;
+  border-top: 1px solid #c7c7c7;
+}
