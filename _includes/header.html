@@ -7,8 +7,10 @@
   <div class="header-main">
     <div class="inner header-inverted">
       <div class="header-content">
+        <a href="{{ "about" | prepend: site.baseurl }}" title="link to Madeleine's about page">
+          <img src="{{ "images/profile.png " | prepend: site.baseurl }}" class="user-image" alt="My Profile Photo">
+        </a>
         <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
-          <!-- <img src="{{ "images/profile.jpg " | prepend: site.baseurl }}" class="user-image" alt="My Profile Photo"> -->
           <h1>{{ site.title }}</h1>
         </a>
         <hr class="divider">
@@ -20,6 +22,7 @@
               <li><a href="{{ site.baseurl }}#blog" class="blog-button" title="link to {{ site.title }} blog" >Blog</a></li>
               <li><a href="{{ "categories" | prepend: site.baseurl }}" title="link to {{ site.title }} categories" >Categories</a></li>
               <li><a href="{{ "tags" | prepend: site.baseurl }}" title="link to {{ site.title }} tags" >Tags</a></li>
+              <li><a href="{{ "about" | prepend: site.baseurl }}" title="link to Madeleine's about page">About</a></li>
             </ul>
           </nav>
           <nav>
