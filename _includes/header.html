@@ -19,7 +19,7 @@
         <div class="navigation-wrapper">
           <nav>
             <ul class="navigation">
-              <li><a href="{{ site.baseurl }}#blog" class="blog-button" title="link to {{ site.title }} blog" >Blog</a></li>
+              <li><a href="{{ "blog" | prepend: site.baseurl }}" class="blog-button" title="link to {{ site.title }} blog" >Blog</a></li>
               <li><a href="{{ "categories" | prepend: site.baseurl }}" title="link to {{ site.title }} categories" >Categories</a></li>
               <li><a href="{{ "tags" | prepend: site.baseurl }}" title="link to {{ site.title }} tags" >Tags</a></li>
               <li><a href="{{ "about" | prepend: site.baseurl }}" title="link to Madeleine's about page">About</a></li>
