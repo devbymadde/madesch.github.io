@@ -24,9 +24,9 @@ It didn't.
 
 At this point, the we were starting to become desperate. The search terms input to google was becoming more and more obscure, one thing led to another and we started reading about [surrogates](https://en.wikipedia.org/wiki/Universal_Character_Set_characters#Surrogates). Surrogate pairs, in the context of Universal Character Set, is a way to map characters outside the basic UCS plane by combining a high/leading surrogate with a low/trailing surrogate. It is then possible to display all characters in the other planes without having to use more than 16 bit to represent them. A surrogate on its on, on the other hand, doesn't have any meaning.
 
-A seed started to grow in my mind. After all, there was some business logic handling the code that was input to to field, splitting the string among other things. I quickly entered the staging website and pasted a couple of those emojis that are crying from laughter. I pressed enter and bam. The bright yellow from the YSOD was almost dazzling.
+A seed started to grow in my mind. After all, there was some business logic handling the code that was input to the field, splitting the string among other things. I quickly entered the staging website and pasted a couple of those emojis that are crying from laughter. I pressed enter and bam. The bright yellow from the YSOD was almost dazzling.
 
-*"What the...""*, I burst out. Unfortunately the rest of the team was fetching coffee so no one was able to hear my successful outcry.
+*"What the..."*, I burst out. Unfortunately the rest of the team was fetching coffee so no one was able to hear my successful outcry.
 
 As soon as the rest of the team arrived I told them about my findings, and we realized that we needed to test it in production too, with the possible outcome that the site would once again crash.
 
