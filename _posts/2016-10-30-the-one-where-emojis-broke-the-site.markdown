@@ -12,7 +12,7 @@ One day we received the dreaded phone call:
 
 The team instantly began checking the logs and found a really strange error: ``EncoderFallbackException: Unable to translate Unicode character \uDBFF at index 114 to specified code page.`` followed by a statement that a query couldn't be executed. The error was constantly being logged and quickly it had over 1000 entries.
 
-We refreshed the app pool and the site started working again, so the we didn't put much more thought to the error.
+We refreshed the app pool and the site started working again, so we didn't put much more thought to the error.
 
 The next day, we discovered that the site was down once again, and we quickly refreshed the app pool before any customers would be affected. After some digging in the event log on the server, we realized that the site crashed at almost the exact same time both days. Merely three minutes differed between the days, and it seemed too unlikely to be a coincidence. Was there a scheduled task running at that exact time that caused the error? Or was someone trying to hack the website during their coffee break?
 
