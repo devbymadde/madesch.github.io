@@ -19,9 +19,29 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fda27b">
   <meta name="theme-color" content="#ffffff">
 
+  <meta name="twitter:site" content="@madesch">
+  <meta name="twitter:creator" content="@madesch">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ site.title }}">
-  <meta name="twitter:description" content="{{ site.description }}">
+
+  {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }}">
+  {% else %}
+    <meta name="twitter:title" content="{{ site.title }}">
+  {% endif %}
+
+  {% if page.url %}
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  {% endif %}
+  {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}">
+  {% else %}
+    <meta name="twitter:description" content="{{ site.description }}">
+  {% endif %}
+  {% if page.image %}
+    <meta name="twitter:image:src" content="{{ site.url }}/images/posts/{{ page.image }}">
+  {% else %}
+    <meta name="twitter:image:src" content="{{ site.url }}/images/twittercard.jpg">
+  {% endif %}
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="{{ site.title }}">

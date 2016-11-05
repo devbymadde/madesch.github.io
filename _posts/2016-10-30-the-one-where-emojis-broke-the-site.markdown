@@ -1,8 +1,9 @@
 ---
 title:  "The One Where Emojis Broke the Site"
-date:   2016-11-01 19     :04:23
+date:   2016-11-01 19:04:23
 categories: [warstory]
 tags: [bugs]
+description: "I was working in a team where we helped a customer developing their new website. The assignment also included maintaining the customer's existing website, an old legacy webforms application with the classic monolithic architecture."
 ---
 I was working in a team where we helped a customer developing their new website. The assignment also included maintaining the customer's existing website, an old legacy webforms application with the classic monolithic architecture.
 
