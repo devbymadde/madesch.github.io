@@ -13,7 +13,7 @@ layout: default
     {{ content }}
   </section>
   <div class="post-meta">
-    <span class="tags">Tags: {% for tag in page.tags %}<a href="{{ site.baseurl }}tags/{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+    <span class="tags">Tags: {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a> {% endfor %}</span>
   </div>
   {% if page.comments != false and site.disqus_shortname %}
   <section id="disqus_thread"></section>
