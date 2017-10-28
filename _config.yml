@@ -1,7 +1,7 @@
 title: Madde's blog
 description: 'Turning coffee into code'
 url: 'http://madesch.com'
-baseurl: '/'
+baseurl:
 google_analytics: 'UA-86115972-1'
 disqus_shortname: madesch
 
