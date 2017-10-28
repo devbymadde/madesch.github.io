@@ -21,7 +21,7 @@ layout: null
       $('.header-cover').addClass('collapsed')
     }
 
-    if (window.location.pathname !== '{{ site.baseurl }}' && window.location.pathname !== '{{ site.baseurl }}index.html') {
+    if (window.location.pathname !== '{{ site.baseurl }}' && window.location.pathname !== '{{ site.baseurl }}index.html' && window.location.pathname !== '/') {
       $('.header-cover').addClass('collapsed')
     }
 
