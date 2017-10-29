@@ -13,7 +13,7 @@ layout: default
 {% endunless %}
 
 {% for post in site.tags.[page.tag] %}
-<h2 class="post-list post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+<h2 class="post-list post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 <div class="post-meta">
   <time datetime="{{ post.date | date: " %-d %b %Y " }}" class="date date">{{ post.date | date: "%-d %b %Y" }}</time> <span class="dot-divider">&#8226;</span> <span class="tags">in {% for category in post.categories %}<a href="{{ site.baseurl }}/categories/{{ category }}">{{ category }}</a> {% endfor %}</span>
 </div>

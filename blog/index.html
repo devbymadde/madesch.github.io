@@ -7,7 +7,7 @@ layout: default
   <ol class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <h2 class="post-list post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <h2 class="post-list post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
         <p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
         <div class="post-meta">
           <time datetime="{{ post.date | date: "%-d %b %Y" }}" class=" date">{{ post.date | date: "%-d %b %Y" }}</time> <span class="dot-divider">&#8226;</span>
